@@ -1,6 +1,5 @@
 <script>
 	import '../app.css';
-	import  linux_icon  from "$lib/linux-tux.svg";
 	
 	// move to a store.svelte.js
 	let currentScore = $state(0);
@@ -18,7 +17,7 @@
 	">
 		<li class="flex flex-row items-center gap-3 text-xl">
 			<div class="max-w-6 md:max-w-10">
-				<img src={linux_icon} alt="linux icon">
+				<img src="linuxtux.svg" alt="linux icon">
 			</div>
 			Linux Trivia
 		</li>
