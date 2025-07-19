@@ -8,25 +8,25 @@
 </script>
 
 <!-- navbar -->
-<nav>
+<nav class="sticky top-0 left-0 z-10">
 	
 	<ul class="
-		w-dvw p-2 px-5 rounded-b-xl
+		w-dvw h-14 py-3 px-5 rounded-b-xl
 		flex flex-row items-center justify-between md:justify-around
-		bg-neutral-800 text-white md:text-lg
+		bg-base-300 text-white md:text-lg
 	">
 		<li class="flex flex-row items-center gap-3 text-xl">
 			<div class="max-w-6 md:max-w-10">
 				<img src="linuxtux.svg" alt="linux icon">
 			</div>
-			Linux Trivia
+			Dev Quizzes
 		</li>
 
-		<li>
+		<!-- <li>
 			<span>
 				{currentScore} exp
 			</span>
-		</li>
+		</li> -->
 	</ul>
 
 </nav>
