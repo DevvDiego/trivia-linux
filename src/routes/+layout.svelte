@@ -17,7 +17,7 @@
 	">
 		<li class="flex flex-row items-center gap-3 text-xl">
 			<div class="max-w-6 md:max-w-10">
-				<img src="linuxtux.svg" alt="linux icon">
+				<img src="./icons/linuxtux.svg" alt="linux icon">
 			</div>
 			Dev Quizzes
 		</li>
