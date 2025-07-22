@@ -1,56 +1,47 @@
 <script>
-    import Quizz from "$lib/components/Quizz.svelte";
+    import Quizz from "$lib/components/QuizzCard.svelte";
+    import { onMount } from "svelte";
 
-    let trivias = $state(
-        {
-            bash:{
-                title: "Basic Bash",
-                body: "Comandos de Bash",
-                icon: "bash-icon.svg",
-                alt: "bash icon"
-            },
+    onMount(async()=>{
+        const res = await fetch("./quizzes.json")
+        if(!res.ok) return;
 
-            svelte:{
-                title: "Svelte",
-                body: "Sintaxis de Svelte 5",
-                icon: "svelte-icon.svg",
-                alt: "svelte icon"
-            },
+        quizzes = await res.json();
 
-            postgresql:{
-                title: "PostgreSQL",
-                body: "La base de datos open-source",
-                icon: "postgresql-icon.svg",
-                alt: "postgre sql icon"
-            },
-            
-            cplusplus:{
-                title: "C++",
-                body: "El lenguaje maestro",
-                icon: "cplusplus-icon.svg",
-                alt: "pocketbase icon"
-            },
-        }
-    );
+        isLoading = false;
+    });
 
+    let quizzes = $state(); 
+
+    let isLoading = $state(false);
 
 </script>
 
-<header class="m-5 text-white">
+{#if isLoading == true}
+    <span class="
+        absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+        loading w-12 loading-spinner text-accent"
+    ></span>
+{:else}
 
-    <span class="block text-center text-xl">
-        ¿Que vamos a aprender hoy?
-    </span>
+    <header class="m-5 text-white">
 
-</header>
+        <span class="block text-center text-xl">
+            ¿Que vamos a aprender hoy?
+        </span>
 
-<section class="
-    mt-4
-    flex flex-row flex-wrap gap-5 justify-center
-">
-    
-    <Quizz {...trivias["bash"]} />
-    <Quizz {...trivias["cplusplus"]} />
-    <Quizz {...trivias["svelte"]} />
-    <Quizz {...trivias["postgresql"]} />
-</section>
+    </header>
+
+    <section class="
+        m-5
+        flex flex-row flex-wrap gap-5 justify-center
+    ">
+        
+        <Quizz {...quizzes["bash"]}/>
+        <Quizz {...quizzes["cplusplus"]} />
+        <Quizz {...quizzes["svelte"]} />
+        <Quizz {...quizzes["postgresql"]} />
+
+    </section>
+
+{/if}
