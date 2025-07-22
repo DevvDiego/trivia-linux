@@ -1,0 +1,124 @@
+{
+    "cpp":[
+      {
+        "id": 1,
+        "technology": "C++",
+        "difficulty": "easy",
+        "question": "¿Qué tipo de dato se usa para números enteros?",
+        "options": ["float", "int", "string", "bool"],
+        "answer": "int",
+        "score": 5,
+        "reason": "int es el tipo básico para enteros. Documentación: https://en.cppreference.com/w/cpp/language/types"
+      },
+      {
+        "id": 2,
+        "technology": "C++",
+        "difficulty": "easy",
+        "question": "¿Cómo se imprime texto en consola?",
+        "options": ["console.log()", "print()", "printf()", "std::cout"],
+        "answer": "std::cout",
+        "score": 5,
+        "reason": "std::cout es el flujo de salida estándar. Ejemplos: https://es.cppreference.com/w/cpp/io/cout"
+      },
+      {
+        "id": 3,
+        "technology": "C++",
+        "difficulty": "easy",
+        "question": "¿Qué compone un programa C++ básico?",
+        "options": [
+          "Función main()",
+          "Clase Program",
+          "Método start()",
+          "Objeto Application"
+        ],
+        "answer": "Función main()",
+        "score": 5,
+        "reason": "Todo programa ejecutable debe tener una función main. Guía: https://isocpp.org/wiki/faq/big-picture#main-program"
+      },
+      {
+        "id": 4,
+        "technology": "C++",
+        "difficulty": "medium",
+        "question": "¿Cómo se declara un puntero?",
+        "options": ["int ptr*", "*int ptr", "ptr int*", "int* ptr"],
+        "answer": "int* ptr",
+        "score": 10,
+        "reason": "El asterisco va después del tipo. Referencia: https://es.cppreference.com/w/cpp/language/pointer"
+      },
+      {
+        "id": 5,
+        "technology": "C++",
+        "difficulty": "medium",
+        "question": "¿Qué es RAII?",
+        "options": [
+          "Recursive Algorithm Implementation",
+          "Resource Acquisition Is Initialization",
+          "Runtime Array Index Identifier",
+          "Random Access Iterator Interface"
+        ],
+        "answer": "Resource Acquisition Is Initialization",
+        "score": 10,
+        "reason": "Patrón fundamental para gestión de recursos. Explicación: https://es.cppreference.com/w/cpp/language/raii"
+      },
+      {
+        "id": 6,
+        "technology": "C++",
+        "difficulty": "medium",
+        "question": "¿Cómo se manejan excepciones?",
+        "options": [
+          "try/catch",
+          "error/check",
+          "exception/handle",
+          "fail/safe"
+        ],
+        "answer": "try/catch",
+        "score": 10,
+        "reason": "Bloques para capturar excepciones. Docs: https://es.cppreference.com/w/cpp/language/try_catch"
+      },
+      {
+        "id": 7,
+        "technology": "C++",
+        "difficulty": "hard",
+        "question": "¿Qué es SFINAE?",
+        "options": [
+          "Standard Failure In Algorithm Execution",
+          "Substitution Failure Is Not An Error",
+          "System Function In Native Application Environment",
+          "Syntax For Inline Assembly Expressions"
+        ],
+        "answer": "Substitution Failure Is Not An Error",
+        "score": 20,
+        "reason": "Concepto clave en metaprogramación. Detalles: https://es.cppreference.com/w/cpp/language/sfinae"
+      },
+      {
+        "id": 8,
+        "technology": "C++",
+        "difficulty": "hard",
+        "question": "¿Qué hace constexpr?",
+        "options": [
+          "Declara constantes globales",
+          "Define expresiones constantes en tiempo de compilación",
+          "Crea constructores constantes",
+          "Especifica parámetros constantes"
+        ],
+        "answer": "Define expresiones constantes en tiempo de compilación",
+        "score": 20,
+        "reason": "Permite cálculos en compilación. Guía: https://es.cppreference.com/w/cpp/language/constexpr"
+      },
+      {
+        "id": 9,
+        "technology": "C++",
+        "difficulty": "hard",
+        "question": "¿Cómo se implementa un move constructor?",
+        "options": [
+          "ClassName(ClassName& other)",
+          "ClassName(const ClassName& other)",
+          "ClassName(ClassName&& other)",
+          "ClassName(ClassName other)"
+        ],
+        "answer": "ClassName(ClassName&& other)",
+        "score": 20,
+        "reason": "Usa referencia a rvalue para transferencia eficiente. Ejemplos: https://es.cppreference.com/w/cpp/language/move_constructor"
+      }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "svelte5":[
+      {
+        "id": 10,
+        "technology": "Svelte 5",
+        "difficulty": "easy",
+        "question": "¿Qué son las runas en Svelte 5?",
+        "options": [
+          "Funciones especiales para animaciones",
+          "Símbolos reactivos mejorados por el compilador",
+          "Componentes preconstruidos",
+          "Plugins para Vite"
+        ],
+        "answer": "Símbolos reactivos mejorados por el compilador",
+        "score": 5,
+        "reason": "Nuevo sistema de reactividad. RFC: https://github.com/sveltejs/rfcs/blob/master/text/0001-runed.md"
+      },
+      {
+        "id": 11,
+        "technology": "Svelte 5",
+        "difficulty": "easy",
+        "question": "¿Cómo se declara estado reactivo?",
+        "options": ["$state", "let reactive", "$signal", "useState()"],
+        "answer": "$state",
+        "score": 5,
+        "reason": "Runa para estado reactivo. Docs: https://svelte.dev/docs/runes#$state"
+      },
+      {
+        "id": 12,
+        "technology": "Svelte 5",
+        "difficulty": "easy",
+        "question": "¿Qué reemplaza a onMount?",
+        "options": ["$setup", "$init", "$effect", "$lifecycle"],
+        "answer": "$effect",
+        "score": 5,
+        "reason": "$effect ejecuta código al montar y cuando cambian dependencias. Referencia: https://svelte.dev/docs/runes#$effect"
+      },
+      {
+        "id": 13,
+        "technology": "Svelte 5",
+        "difficulty": "medium",
+        "question": "¿Cómo se crea estado derivado?",
+        "options": ["$memo", "$derived", "$computed", "$reactive"],
+        "answer": "$derived",
+        "score": 10,
+        "reason": "Runa para valores calculados automáticamente. Docs: https://svelte.dev/docs/runes#$derived"
+      },
+      {
+        "id": 14,
+        "technology": "Svelte 5",
+        "difficulty": "medium",
+        "question": "¿Qué hace la runa $props?",
+        "options": [
+          "Define propiedades de componente",
+          "Expone propiedades al padre",
+          "Provee contexto a componentes hijos",
+          "Declara tipos para TypeScript"
+        ],
+        "answer": "Define propiedades de componente",
+        "score": 10,
+        "reason": "Reemplaza export let. RFC: https://github.com/sveltejs/rfcs/blob/master/text/0002-props.md"
+      },
+      {
+        "id": 15,
+        "technology": "Svelte 5",
+        "difficulty": "medium",
+        "question": "¿Cómo se accede a elementos del DOM?",
+        "options": [
+          "bind:this",
+          "$element",
+          "useRef()",
+          "document.querySelector"
+        ],
+        "answer": "bind:this",
+        "score": 10,
+        "reason": "Mantiene compatibilidad con versiones anteriores. Docs: https://svelte.dev/docs/element-directives#bind-this"
+      },
+      {
+        "id": 16,
+        "technology": "Svelte 5",
+        "difficulty": "hard",
+        "question": "¿Qué es una función de efecto?",
+        "options": [
+          "Función que optimiza rendimiento",
+          "Código que se ejecuta reactivamente",
+          "Método para animaciones",
+          "Utilidad para SSR"
+        ],
+        "answer": "Código que se ejecuta reactivamente",
+        "score": 20,
+        "reason": "Responde a cambios de estado. Ejemplos: https://svelte.dev/docs/runes#$effect"
+      },
+      {
+        "id": 17,
+        "technology": "Svelte 5",
+        "difficulty": "hard",
+        "question": "¿Cómo se optimizan componentes?",
+        "options": [
+          "Usando $memo",
+          "Con la directiva lazy",
+          "Mediante $derived optimizado",
+          "Con runas de memoización"
+        ],
+        "answer": "Con runas de memoización",
+        "score": 20,
+        "reason": "Las runas permiten optimizaciones avanzadas. RFC: https://github.com/sveltejs/rfcs/blob/master/text/0001-runed.md#memoization"
+      },
+      {
+        "id": 18,
+        "technology": "Svelte 5",
+        "difficulty": "hard",
+        "question": "¿Qué reemplaza a las stores?",
+        "options": [
+          "$state global",
+          "$context",
+          "$shared",
+          "$signal"
+        ],
+        "answer": "$state global",
+        "score": 20,
+        "reason": "Se puede declarar estado global con $state fuera de componentes. Guía: https://svelte.dev/docs/runes#$state"
+      }
+    ]
+}
