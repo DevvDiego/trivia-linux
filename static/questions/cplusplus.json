@@ -1,5 +1,4 @@
-{
-    "cpp":[
+[
       {
         "id": 1,
         "technology": "C++",
@@ -120,5 +119,4 @@
         "score": 20,
         "reason": "Usa referencia a rvalue para transferencia eficiente. Ejemplos: https://es.cppreference.com/w/cpp/language/move_constructor"
       }
-    ]
-}
+]

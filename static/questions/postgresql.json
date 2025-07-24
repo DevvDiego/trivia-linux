@@ -1,5 +1,4 @@
-{
-    "postgresql":[
+[
       {
         "id": 28,
         "technology": "PostgreSQL",
@@ -125,5 +124,4 @@
         "score": 20,
         "reason": "Identifica cuellos de botella. Guía: https://www.postgresql.org/docs/current/using-explain.html"
       }
-    ]
-}
+]

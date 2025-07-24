@@ -1,5 +1,4 @@
-{
-    "svelte5":[
+[
       {
         "id": 10,
         "technology": "Svelte 5",
@@ -120,5 +119,4 @@
         "score": 20,
         "reason": "Se puede declarar estado global con $state fuera de componentes. Guía: https://svelte.dev/docs/runes#$state"
       }
-    ]
-}
+]

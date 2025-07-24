@@ -1,129 +1,127 @@
-{
-    "bash":[
-      {
-        "id": 19,
-        "technology": "Bash",
-        "difficulty": "easy",
-        "question": "¿Qué comando lista archivos?",
-        "options": ["dir", "list", "show", "ls"],
-        "answer": "ls",
-        "score": 5,
-        "reason": "Comando básico para listar contenido. Man page: https://man7.org/linux/man-pages/man1/ls.1.html"
-      },
-      {
-        "id": 20,
-        "technology": "Bash",
-        "difficulty": "easy",
-        "question": "¿Cómo se cambia de directorio?",
-        "options": ["cd", "chdir", "move", "goto"],
-        "answer": "cd",
-        "score": 5,
-        "reason": "Change Directory - navega entre directorios. Referencia: https://www.gnu.org/software/bash/manual/bash.html#Bourne-Shell-Builtins"
-      },
-      {
-        "id": 21,
-        "technology": "Bash",
-        "difficulty": "easy",
-        "question": "¿Qué muestra 'pwd'?",
-        "options": [
-          "Nombre de usuario",
-          "Directorio actual",
-          "Historial de comandos",
-          "Procesos activos"
-        ],
-        "answer": "Directorio actual",
-        "score": 5,
-        "reason": "Print Working Directory - muestra ruta actual. Docs: https://man7.org/linux/man-pages/man1/pwd.1.html"
-      },
-      {
-        "id": 22,
-        "technology": "Bash",
-        "difficulty": "medium",
-        "question": "¿Cómo se redirige stderr a un archivo?",
-        "options": [
-          "1> error.log",
-          "err> error.log",
-          "2> error.log",
-          "stderr> error.log"
-        ],
-        "answer": "2> error.log",
-        "score": 10,
-        "reason": "2 es descriptor de stderr. Guía: https://www.gnu.org/software/bash/manual/html_node/Redirections.html"
-      },
-      {
-        "id": 23,
-        "technology": "Bash",
-        "difficulty": "medium",
-        "question": "¿Qué hace 'grep'?",
-        "options": [
-          "Comprime archivos",
-          "Busca patrones en texto",
-          "Ordena líneas",
-          "Edita archivos"
-        ],
-        "answer": "Busca patrones en texto",
-        "score": 10,
-        "reason": "Herramienta para búsqueda de texto. Man page: https://man7.org/linux/man-pages/man1/grep.1.html"
-      },
-      {
-        "id": 24,
-        "technology": "Bash",
-        "difficulty": "medium",
-        "question": "¿Cómo se asigna una variable?",
-        "options": [
-          "set var = valor",
-          "var = valor",
-          "var: valor",
-          "var=valor"
-        ],
-        "answer": "var=valor",
-        "score": 10,
-        "reason": "Sin espacios alrededor del igual. Docs: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameters.html"
-      },
-      {
-        "id": 25,
-        "technology": "Bash",
-        "difficulty": "hard",
-        "question": "¿Qué significa 'set -euo pipefail'?",
-        "options": [
-          "Habilita modo estricto",
-          "Configura redirecciones",
-          "Define permisos",
-          "Optimiza rendimiento"
-        ],
-        "answer": "Habilita modo estricto",
-        "score": 20,
-        "reason": "Buenas prácticas para scripts robustos. Explicación: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html"
-      },
-      {
-        "id": 26,
-        "technology": "Bash",
-        "difficulty": "hard",
-        "question": "¿Cómo procesar línea por línea?",
-        "options": [
-          "while read line; do ... done < archivo",
-          "for line in $(cat archivo); do ... done",
-          "lines=$(cat archivo); for line in $lines; do ... done",
-          "process --lines archivo"
-        ],
-        "answer": "while read line; do ... done < archivo",
-        "score": 20,
-        "reason": "Maneja espacios correctamente. Guía: https://mywiki.wooledge.org/BashFAQ/001"
-      },
-      {
-        "id": 27,
-        "technology": "Bash",
-        "difficulty": "hard",
-        "question": "¿Qué hace '${variable:-default}'?",
-        "options": [
-          "Asigna valor por defecto",
-          "Compara con valor predeterminado",
-          "Evalúa expresión condicional",
-          "Valida sintaxis"
-        ],
-        "answer": "Asigna valor por defecto",
-        "score": 20,
-        "reason": "Expansión de parámetros. Referencia: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html"
-      }
-    ]
-}
+[
+  {
+    "id": 19,
+    "technology": "Bash",
+    "difficulty": "easy",
+    "question": "¿Qué comando lista archivos?",
+    "options": ["dir", "list", "show", "ls"],
+    "answer": "ls",
+    "score": 5,
+    "reason": "Comando básico para listar contenido. Man page: https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": 20,
+    "technology": "Bash",
+    "difficulty": "easy",
+    "question": "¿Cómo se cambia de directorio?",
+    "options": ["cd", "chdir", "move", "goto"],
+    "answer": "cd",
+    "score": 5,
+    "reason": "Change Directory - navega entre directorios. Referencia: https://www.gnu.org/software/bash/manual/bash.html#Bourne-Shell-Builtins"
+  },
+  {
+    "id": 21,
+    "technology": "Bash",
+    "difficulty": "easy",
+    "question": "¿Qué muestra 'pwd'?",
+    "options": [
+      "Nombre de usuario",
+      "Directorio actual",
+      "Historial de comandos",
+      "Procesos activos"
+    ],
+    "answer": "Directorio actual",
+    "score": 5,
+    "reason": "Print Working Directory - muestra ruta actual. Docs: https://man7.org/linux/man-pages/man1/pwd.1.html"
+  },
+  {
+    "id": 22,
+    "technology": "Bash",
+    "difficulty": "medium",
+    "question": "¿Cómo se redirige stderr a un archivo?",
+    "options": [
+      "1> error.log",
+      "err> error.log",
+      "2> error.log",
+      "stderr> error.log"
+    ],
+    "answer": "2> error.log",
+    "score": 10,
+    "reason": "2 es descriptor de stderr. Guía: https://www.gnu.org/software/bash/manual/html_node/Redirections.html"
+  },
+  {
+    "id": 23,
+    "technology": "Bash",
+    "difficulty": "medium",
+    "question": "¿Qué hace 'grep'?",
+    "options": [
+      "Comprime archivos",
+      "Busca patrones en texto",
+      "Ordena líneas",
+      "Edita archivos"
+    ],
+    "answer": "Busca patrones en texto",
+    "score": 10,
+    "reason": "Herramienta para búsqueda de texto. Man page: https://man7.org/linux/man-pages/man1/grep.1.html"
+  },
+  {
+    "id": 24,
+    "technology": "Bash",
+    "difficulty": "medium",
+    "question": "¿Cómo se asigna una variable?",
+    "options": [
+      "set var = valor",
+      "var = valor",
+      "var: valor",
+      "var=valor"
+    ],
+    "answer": "var=valor",
+    "score": 10,
+    "reason": "Sin espacios alrededor del igual. Docs: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameters.html"
+  },
+  {
+    "id": 25,
+    "technology": "Bash",
+    "difficulty": "hard",
+    "question": "¿Qué significa 'set -euo pipefail'?",
+    "options": [
+      "Habilita modo estricto",
+      "Configura redirecciones",
+      "Define permisos",
+      "Optimiza rendimiento"
+    ],
+    "answer": "Habilita modo estricto",
+    "score": 20,
+    "reason": "Buenas prácticas para scripts robustos. Explicación: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html"
+  },
+  {
+    "id": 26,
+    "technology": "Bash",
+    "difficulty": "hard",
+    "question": "¿Cómo procesar línea por línea?",
+    "options": [
+      "while read line; do ... done < archivo",
+      "for line in $(cat archivo); do ... done",
+      "lines=$(cat archivo); for line in $lines; do ... done",
+      "process --lines archivo"
+    ],
+    "answer": "while read line; do ... done < archivo",
+    "score": 20,
+    "reason": "Maneja espacios correctamente. Guía: https://mywiki.wooledge.org/BashFAQ/001"
+  },
+  {
+    "id": 27,
+    "technology": "Bash",
+    "difficulty": "hard",
+    "question": "¿Qué hace '${variable:-default}'?",
+    "options": [
+      "Asigna valor por defecto",
+      "Compara con valor predeterminado",
+      "Evalúa expresión condicional",
+      "Valida sintaxis"
+    ],
+    "answer": "Asigna valor por defecto",
+    "score": 20,
+    "reason": "Expansión de parámetros. Referencia: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html"
+  }
+]
