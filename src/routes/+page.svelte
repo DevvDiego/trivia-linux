@@ -1,5 +1,5 @@
 <script>
-    import Quizz from "$lib/components/QuizzCard.svelte";
+    import QuizzCard from "$lib/components/QuizzCard.svelte";
     import { onMount } from "svelte";
 
     onMount(async()=>{
@@ -36,11 +36,18 @@
         m-5
         flex flex-row flex-wrap gap-5 justify-center
     ">
-        
-        <Quizz {...quizzes["bash"]}/>
-        <Quizz {...quizzes["cplusplus"]} />
-        <Quizz {...quizzes["svelte"]} />
-        <Quizz {...quizzes["postgresql"]} />
+    
+        {#if !quizzes}
+            
+            <h1>Cargando...</h1>
+
+        {:else}
+            
+            {#each quizzes as quizz }
+                <QuizzCard {...quizz} />
+            {/each}
+
+        {/if}
 
     </section>
 
