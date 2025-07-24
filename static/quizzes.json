@@ -1,5 +1,5 @@
-{
-    "bash":{
+[
+    {
         "title": "Bash",
         "body": "Comandos de Bash",
         "icon": "./icons/bash-icon.svg",
@@ -7,7 +7,7 @@
         "questions": "./questions/bash.json"
     },
 
-    "svelte5":{
+    {
         "title": "Svelte 5",
         "body": "Sintaxis de Svelte 5",
         "icon": "./icons/svelte-icon.svg",
@@ -15,7 +15,7 @@
         "questions": "./questions/svelte5.json"
     },
 
-    "postgresql":{
+    {
         "title": "PostgreSQL",
         "body": "La base de datos open-source",
         "icon": "./icons/postgresql-icon.svg",
@@ -23,11 +23,11 @@
         "questions": "./questions/postgresql.json"
     },
     
-    "cplusplus":{
+    {
         "title": "C++",
         "body": "El lenguaje maestro",
         "icon": "/icons/cplusplus-icon.svg",
         "alt": "c plus plus icon",
         "questions": "./questions/cplusplus.json"
     }
-}
+]
