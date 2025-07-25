@@ -8,6 +8,7 @@ export default {
 			assets: 'docs',
 			fallback: "404.html",
 			precompress: false,
+			strict: true
 		}),
 
 		paths: {
