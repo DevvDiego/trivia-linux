@@ -12,7 +12,7 @@ export default {
 		}),
 
 		paths: {
-			base: "/trivia-linux"
+			base: "/triviaLinux"
 		}
 	}
 };
