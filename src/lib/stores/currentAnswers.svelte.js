@@ -3,21 +3,25 @@ export let currentAnswers = $state(
     {json:""}
 );
 
-export const addAnswer = (questionId, value, isCorrect, score) => {
+export const addAnswer = (id, technology, difficulty,
+         question, selected, score, reason, isCorrect) => {
     //que deberia hacer??
     let savedAnswers = JSON.parse( localStorage.getItem("savedAnswers") );
-    // if( savedAnswers === null) throw new Error("no previous answers");
+    if( savedAnswers === null) savedAnswers = [];
 
     
 
-    let answers = {
+    let answers = [
         ...savedAnswers,
-        [questionId]:{
-            value,
-            isCorrect,
-            score
+        {
+            id,
+            question,
+            selected,
+            score,
+            reason,
+            isCorrect
         }
-    }
+    ]
     
 
     localStorage.setItem("savedAnswers", JSON.stringify(answers));

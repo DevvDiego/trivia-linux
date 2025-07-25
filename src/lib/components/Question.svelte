@@ -2,17 +2,17 @@
     import { addAnswer } from "$lib/stores/currentAnswers.svelte";
 
     function storeValue(e){
-        let value = e.target.value;
+        let selected = e.target.value;
         let isCorrect = false;
 
-        if( value === answer ) { isCorrect = true; }
+        if( selected === answer ) { isCorrect = true; }
 
-        addAnswer(id, value, isCorrect, score);
+        addAnswer(id, technology, difficulty, question, selected, score, reason, isCorrect);
     }
 
 
     let { class: className, id, technology, difficulty,
-         question, options, answer, score } = $props();
+         question, options, answer, score, reason } = $props();
 </script>
 
 <fieldset class="{className} my-5
