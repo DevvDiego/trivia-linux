@@ -1,1 +1,0 @@
-import{p as t}from"./B6VBc8lO.js";let r=t({value:""});const u=e=>{localStorage.setItem("storedQuizz",e),r.value=e},a=()=>{const e=localStorage.getItem("storedQuizz");if(e===null)throw new Error("no previous quizz");return r.value=e,r.value};export{u as c,a as g};
