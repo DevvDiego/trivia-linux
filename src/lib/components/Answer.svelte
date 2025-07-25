@@ -1,4 +1,6 @@
 <script>
+    import { addAnswer } from "$lib/stores/currentAnswers.svelte";
+
     let { class: className, id, technology,
          question, selected, score, reason, isCorrect} = $props();
 </script>
@@ -16,7 +18,7 @@
     </h2>
 
 
-    <select class="select" onchange={storeValue}>
+    <select class="select" onchange={addAnswer()}>
         <option disabled selected>{selected}</option>
     </select>
 
