@@ -1,5 +1,4 @@
 <script>
-    import { redirect } from '@sveltejs/kit';
 	import '../app.css';
     import { onMount } from 'svelte';
     import { getCurrentScore } from '$lib/stores/currentScore.svelte';
