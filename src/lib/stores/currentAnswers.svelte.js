@@ -32,7 +32,7 @@ export const resetAnswers = () => {
 
 export const getAnswers = () => {
     let savedAnswers = JSON.parse( localStorage.getItem("savedAnswers") );
-    currentAnswers.json = answers;
+    currentAnswers.json = savedAnswers;
 
     return currentAnswers.json;
 }
