@@ -1,4 +1,5 @@
 <script>
+    import { base } from "$app/paths";
     import Question from "$lib/components/Question.svelte";
     import { getCurrentQuizz } from "$lib/stores/currentQuizz.svelte";
     import { onMount } from "svelte";
@@ -17,18 +18,19 @@
 </script>
 
 
-{#each questions as question}
-    
-    <Question class="m-auto" {...question} />
+<div class="flex flex-col justify-center items-center">
 
-{/each}
+    {#each questions as question}
+        
+        <Question class="m-auto" {...question} />
 
+    {/each}
 
-<div class="bg-base-100 fixed bottom-0 w-full text-center">
-    <ul class="steps">
-        <li class="step step"></li>
-        <li class="step step"></li>
-        <li class="step step"></li>
-        <li class="step step"></li>
-    </ul>
+    <a href={base + "./results"} class="
+        btn btn-primary btn-block btn-lg 
+        max-w-5/12 my-10
+    ">
+        Enviar
+    </a>
+
 </div>
