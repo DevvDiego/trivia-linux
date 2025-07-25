@@ -1,4 +1,5 @@
 <script>
+    import { redirect } from '@sveltejs/kit';
 	import '../app.css';
 	
 	// move to a store.svelte.js
@@ -16,10 +17,14 @@
 		bg-base-300 text-white md:text-lg
 	">
 		<li class="flex flex-row items-center gap-3 text-xl">
-			<div class="max-w-6 md:max-w-10">
-				<img src="./icons/linuxtux.svg" alt="linux icon">
-			</div>
-			Dev Quizzes
+
+			<a href="/" class="btn">
+				<div class="max-w-6 md:max-w-10">
+					<img src="./icons/linuxtux.svg" alt="linux icon">
+				</div>
+				Dev Quizzes
+			</a>
+
 		</li>
 
 		<!-- <li>
