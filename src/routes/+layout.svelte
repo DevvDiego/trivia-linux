@@ -1,10 +1,11 @@
 <script>
     import { redirect } from '@sveltejs/kit';
 	import '../app.css';
+    import { onMount } from 'svelte';
+    import { getCurrentScore } from '$lib/stores/currentScore.svelte';
 	
-	// move to a store.svelte.js
 	let currentScore = $state(0);
-
+	
 	let { children } = $props();
 </script>
 
@@ -27,11 +28,11 @@
 
 		</li>
 
-		<!-- <li>
+		<li>
 			<span>
-				{currentScore} exp
+				Score: {getCurrentScore()}
 			</span>
-		</li> -->
+		</li>
 	</ul>
 
 </nav>

@@ -1,6 +1,7 @@
 <script>
     import { base } from "$app/paths";
     import Answer from "$lib/components/Answer.svelte";
+    import { addScore, getCurrentScore } from "$lib/stores/currentScore.svelte";
     import { getAnswers } from "$lib/stores/currentAnswers.svelte";
     import { onMount } from "svelte";
 
@@ -16,11 +17,14 @@
 
         if(answers == null) location = base + "./";
 
-        for(let i=0; i<answers.length; i++){
-            if(answers[i].isCorrect == true){
-                score = score + answers[i].score;
+        for (let i = 0; i < answers.length; i++) {
+            if (answers[i].isCorrect) {
+                score += answers[i].score;
             }
         }
+
+        addScore(score);
+
 
         isLoading = false;
     });
