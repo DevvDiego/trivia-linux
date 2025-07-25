@@ -1,8 +1,13 @@
 <script>
     import QuizzCard from "$lib/components/QuizzCard.svelte";
+    import { resetAnswers } from "$lib/stores/currentAnswers.svelte";
     import { onMount } from "svelte";
 
     onMount(async()=>{
+
+        //if this page is mounted, remove the stored answers if they exist
+        resetAnswers();
+
         const res = await fetch("./quizzes.json")
         if(!res.ok) return;
 

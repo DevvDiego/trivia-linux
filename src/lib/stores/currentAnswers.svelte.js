@@ -24,6 +24,15 @@ export const addAnswer = (questionId, value, isCorrect, score) => {
     currentAnswers.json = answers;
 }
 
+export const resetAnswers = () => {
+    localStorage.removeItem("savedAnswers");
+    currentAnswers.json = "";
+    return;
+}
+
 export const getAnswers = () => {
+    let savedAnswers = JSON.parse( localStorage.getItem("savedAnswers") );
+    currentAnswers.json = answers;
+
     return currentAnswers.json;
 }
