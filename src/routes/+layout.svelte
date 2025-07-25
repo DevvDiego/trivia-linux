@@ -2,6 +2,7 @@
 	import '../app.css';
     import { onMount } from 'svelte';
     import { getCurrentScore } from '$lib/stores/currentScore.svelte';
+    import { base } from '$app/paths';
 	
 	let currentScore = $state(0);
 	
@@ -18,7 +19,7 @@
 	">
 		<li class="flex flex-row items-center gap-3 text-xl">
 
-			<a href="/" class="btn">
+			<a href={ base + "/"} class="btn">
 				<div class="max-w-6 md:max-w-10">
 					<img src="./icons/linuxtux.svg" alt="linux icon">
 				</div>
