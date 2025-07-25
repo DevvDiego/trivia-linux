@@ -1,0 +1,1 @@
+import{p as r}from"./D0nYAcEP.js";const e=r({value:0});e.value=Number(localStorage.getItem("storedScore"))||0;const a=t=>{e.value+=Number(t),localStorage.setItem("storedScore",e.value.toString())},s=()=>e.value;export{a,s as g};
