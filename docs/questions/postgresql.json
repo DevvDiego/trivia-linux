@@ -1,0 +1,127 @@
+[
+      {
+        "id": 28,
+        "technology": "PostgreSQL",
+        "difficulty": "easy",
+        "question": "¿Cómo iniciar sesión en psql?",
+        "options": [
+          "psql -U usuario",
+          "login psql usuario",
+          "connect postgres -u usuario",
+          "pgcli usuario"
+        ],
+        "answer": "psql -U usuario",
+        "score": 5,
+        "reason": "Sintaxis básica de conexión. Docs: https://www.postgresql.org/docs/current/app-psql.html"
+      },
+      {
+        "id": 29,
+        "technology": "PostgreSQL",
+        "difficulty": "easy",
+        "question": "¿Qué comando lista tablas?",
+        "options": ["\\dt", "SHOW TABLES", "\\tables", "LIST TABLES"],
+        "answer": "\\dt",
+        "score": 5,
+        "reason": "Meta-comando de psql. Referencia: https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-META-COMMANDS"
+      },
+      {
+        "id": 30,
+        "technology": "PostgreSQL",
+        "difficulty": "easy",
+        "question": "¿Cómo seleccionar todos los campos?",
+        "options": ["GET *", "SELECT ALL", "SELECT *", "FIND *"],
+        "answer": "SELECT *",
+        "score": 5,
+        "reason": "Sintaxis SQL estándar. Tutorial: https://www.postgresql.org/docs/current/tutorial-select.html"
+      },
+      {
+        "id": 31,
+        "technology": "PostgreSQL",
+        "difficulty": "medium",
+        "question": "¿Qué es un JOIN?",
+        "options": [
+          "Método de compresión",
+          "Comando para unir tablas",
+          "Tipo de dato especial",
+          "Función de agregación"
+        ],
+        "answer": "Comando para unir tablas",
+        "score": 10,
+        "reason": "Combina datos de múltiples tablas. Docs: https://www.postgresql.org/docs/current/tutorial-join.html"
+      },
+      {
+        "id": 32,
+        "technology": "PostgreSQL",
+        "difficulty": "medium",
+        "question": "¿Cómo crear llave primaria?",
+        "options": [
+          "PRIMARY KEY",
+          "MAIN KEY",
+          "PRIMARY INDEX",
+          "UNIQUE IDENTIFIER"
+        ],
+        "answer": "PRIMARY KEY",
+        "score": 10,
+        "reason": "Restricción para identificadores únicos. Guía: https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-PRIMARY-KEYS"
+      },
+      {
+        "id": 33,
+        "technology": "PostgreSQL",
+        "difficulty": "medium",
+        "question": "¿Qué hace EXPLAIN?",
+        "options": [
+          "Documenta esquemas",
+          "Muestra plan de ejecución",
+          "Exporta datos",
+          "Explica errores"
+        ],
+        "answer": "Muestra plan de ejecución",
+        "score": 10,
+        "reason": "Herramienta para optimización. Docs: https://www.postgresql.org/docs/current/sql-explain.html"
+      },
+      {
+        "id": 34,
+        "technology": "PostgreSQL",
+        "difficulty": "hard",
+        "question": "¿Qué son CTEs?",
+        "options": [
+          "Common Table Expressions",
+          "Custom Type Extensions",
+          "Compiled Trigger Events",
+          "Concurrent Transaction Executors"
+        ],
+        "answer": "Common Table Expressions",
+        "score": 20,
+        "reason": "Expresiones temporales con WITH. Referencia: https://www.postgresql.org/docs/current/queries-with.html"
+      },
+      {
+        "id": 35,
+        "technology": "PostgreSQL",
+        "difficulty": "hard",
+        "question": "¿Qué es MVCC?",
+        "options": [
+          "Multi-Version Concurrency Control",
+          "Multi-Value Column Compression",
+          "Metadata Version Control System",
+          "Multi-Variable Constraint Check"
+        ],
+        "answer": "Multi-Version Concurrency Control",
+        "score": 20,
+        "reason": "Modelo de concurrencia fundamental. Explicación: https://www.postgresql.org/docs/current/mvcc-intro.html"
+      },
+      {
+        "id": 36,
+        "technology": "PostgreSQL",
+        "difficulty": "hard",
+        "question": "¿Cómo optimizar consultas lentas?",
+        "options": [
+          "Usar EXPLAIN ANALYZE",
+          "Agregar más índices siempre",
+          "Reducir todas las tablas",
+          "Desactivar logging"
+        ],
+        "answer": "Usar EXPLAIN ANALYZE",
+        "score": 20,
+        "reason": "Identifica cuellos de botella. Guía: https://www.postgresql.org/docs/current/using-explain.html"
+      }
+]
