@@ -52,7 +52,7 @@
         </p>
 
         <div class="card-actions justify-end">
-            <a href=".." class="btn btn-primary">Nuevo quizz</a>
+            <a href={base + "/"} class="btn btn-primary">Nuevo quizz</a>
         </div>
     </div>
 </div>

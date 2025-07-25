@@ -26,7 +26,7 @@
 
     {/each}
 
-    <a href={base + "./results"} class="
+    <a href={base + "/results"} class="
         btn btn-primary btn-block btn-lg 
         max-w-5/12 my-10
     ">
