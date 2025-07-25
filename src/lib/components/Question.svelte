@@ -1,4 +1,14 @@
 <script>
+    import { addAnswer } from "$lib/stores/currentAnswers.svelte";
+
+    function storeValue(e){
+        let value = e.target.value;
+        let isCorrect = false;
+
+        if( value === answer ) { isCorrect = true; }
+
+        addAnswer(id, value, isCorrect, score);
+    }
 
 
     let { class: className, id, technology, difficulty,
@@ -16,7 +26,7 @@
     </h2>
 
 
-    <select class="select">
+    <select class="select" onchange={storeValue}>
         <option disabled selected>Selecciona una opcion</option>
         {#each options as option}
             <option>
@@ -37,9 +47,5 @@
     {:else}
         <!-- Show no badges -->
     {/if}
-
-    <button class="btn btn-primary mt-4">
-        Send
-    </button>
 
 </fieldset>
